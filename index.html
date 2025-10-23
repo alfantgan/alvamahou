@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Alfajrul Hakam – TI 3B</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(to bottom, #e0ecff, #ffffff);
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border: 1px solid #ccc;
+            width: 80%;
+            margin: 40px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            background: linear-gradient(90deg, #0073e6, #004aad);
+            color: white;
+            padding: 25px 0;
+        }
+
+        .header h2 {
+            display: inline-block;
+            border-right: 3px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 3s steps(40, end) forwards, blink 0.8s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 420px; }
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: white; }
+        }
+
+        .header p {
+            margin: 10px 0 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* Bagian Semester */
+        .semester {
+            text-align: center;
+            font-weight: bold;
+            color: #004aad;
+            background-color: #eaf2ff;
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        /* Link */
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Biodata */
+        .biodata td {
+            padding: 8px 0;
+        }
+
+        .biodata td:first-child {
+            font-weight: bold;
+            color: #003366;
+            width: 40%;
+        }
+
+        /* Gaya untuk gambar */
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 130px;
+            border-radius: 15px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsif */
+        @media (max-width: 700px) {
+            table {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Header -->
+        <tr>
+            <td colspan="2" class="header">
+                <h2>Biodata Alfajrul Hakam – TI 3B</h2>
+                <p>Nama: <b>Alfajrul Hakam</b></p>
+            </td>
+        </tr>
+
+        <!-- Bagian Semester -->
+        <tr>
+            <td colspan="2" class="semester">
+                Semester III – Kelas TI 3B
+            </td>
+        </tr>
+
+        <!-- Isi Konten -->
+        <tr>
+            <!-- Kolom Kiri -->
+            <td width="40%" valign="top">
+                <p><a href="https://www.w3schools.com/html/" target="_blank">Informasi HTML</a> (referensi belajar HTML)</p>
+                <p><a href="https://www.alightmotion.com/" target="_blank">Product Editing</a> (alat editing video profesional)</p>
+                <br>
+
+                <!-- Gambar Alight Motion -->
+                <a href="https://www.alightmotion.com/" target="_blank">
+                    <img src="alightmotion.png" alt="Logo Alight Motion">
+                </a>
+            </td>
+
+            <!-- Kolom Kanan -->
+            <td valign="top">
+                <table class="biodata" width="100%">
+                    <tr><td>Jenis Kelamin</td><td>Laki-laki</td></tr>
+                    <tr><td>TTL</td><td>27-09-2005</td></tr>
+                    <tr><td>Alamat</td><td>Desa Terantang</td></tr>
+                    <tr><td>Hobby</td><td>Editing</td></tr>
+                    <tr><td>Tujuan Kuliah</td><td>Ingin memperdalam ilmu komputer</td></tr>
+                    <tr><td>Selesai/Tamat</td><td>SMA</td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
